@@ -8,17 +8,36 @@
  body, html {
     height: 100%;
     font-family: 'News Cycle', Arial, sans-serif;
-    background-color: #EDE6CD;
+
 }
 
 h2 {
     color: #F58233;
-    font-size: 1.75em;
+    font-size: 2.375em;
+    line-height: 1.25em;
+}
+
+h3 {
+    color: #EDE6CD;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: right;
+    padding: .15em .2em .05em .5em;
+    line-height: 1.125em;
 }
 
 p {
     font-size: 1.125em;
     line-height: 1.25em;
+}
+
+#quicklinks p {
+    color: #EDE6CD;
+    weight: 700px;
+    size: 1.875em;
+    text-align: right;
+    line-height: 1em;
+    padding: .15em .2em .05em .5em;
 }
 
 nav {
@@ -85,13 +104,98 @@ li:hover{
     padding: 0 10px;
 }
 
+.blurb {
+    background-color: #EDE6CD;
+    width: 100%;
+}
+
 .blurbh {
     text-align: center;
-    margin: 10px auto;
+    margin: 15px auto;
 }
 
 #aboutsection {
     text-align: justify;
     width: 35%;
-    margin: 10px auto;
+    margin: 15px auto;
+
+}
+
+#quicklinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 5em;
+    margin-top: 5em;
+}
+.linkflex {
+    width: 15em;
+    height: 15em;
+    background-color: black;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: .125em;
+}
+
+#mainkoi {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url("../media/koi2.jpg");
+    
+}
+
+#ceremonial {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url("../media/koi1.jpg");
+}
+
+#koicare {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url("../media/koi5.jpg");
+}
+
+#about {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url("../media/koi3.jpg");
+}
+
+footer {
+    line-height: 1.125em;
+    color: #EDE6CD;
+    background-color: black; 
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .linkflex {
+        width: 25em;
+        height: 25em;
+        background-color: black;
+        margin: .125em;
+    } 
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    
+    #quicklinks {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 100%;
+        margin-bottom: 2.5em;
+        margin-top: 2.5em;
+    }
+
+    .linkflex {
+        width: 100vw;
+        height: 50vh;
+        background-color: black;
+        margin: .125em;
+        
+    } 
+
+    #aboutsection {
+        text-align: left;
+        min-width: 75vw;
+        margin: 15px auto;
+    
+    }
 }
