@@ -8,6 +8,17 @@
  body, html {
     height: 100%;
     font-family: 'News Cycle', Arial, sans-serif;
+    background-color: #EDE6CD;
+}
+
+h2 {
+    color: #F58233;
+    font-size: 1.75em;
+}
+
+p {
+    font-size: 1.125em;
+    line-height: 1.25em;
 }
 
 nav {
@@ -72,4 +83,15 @@ li:hover{
 #toplogo {
     height: 50%;
     padding: 0 10px;
+}
+
+.blurbh {
+    text-align: center;
+    margin: 10px auto;
+}
+
+#aboutsection {
+    text-align: justify;
+    width: 35%;
+    margin: 10px auto;
 }
