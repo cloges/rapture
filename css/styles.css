@@ -39,6 +39,27 @@ h3 {
     line-height: 1.125em;
 }
 
+#ceremonycontainer h3 {
+    text-align: left;
+    margin: .125em;
+    padding: 0;
+    color: black;
+}
+
+#ceremonycontainer h4 {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-size: 1.25em;
+}
+
+#ceremonycontainer p {
+    text-align: left;
+    margin: 0 .125em;
+    padding: 0;
+    font-weight: 700;
+}
+
 h6 {
     color: #EDE6CD;
     font-size: 2em;
@@ -194,8 +215,25 @@ li:hover{
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, .5)), url("../media/koi3.jpg");
 }
 
-.heading {
+#ceremonycontainer {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    size: 85%;
+    margin-bottom: 2em;
+}
+
+.pcontainer {
     width: 80%;
+}
+
+.fishpond {
+    width: 30%;
+    margin: .125em;
+}
+
+.heading {
+    width: 70%;
     text-align: center;
     margin: 2.5em auto;
     padding: 1em 0;
@@ -203,6 +241,45 @@ li:hover{
     border-bottom: 1px solid #EDE6CD;
 }
 
+.about {
+    display: inline-flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.containerabout {
+    width: 40%;
+    margin: .125em;
+    padding: 1em;
+}
+
+.logocenter {
+    width: 100%;
+    padding: 0em 8.5em;
+}
+
+.floatthis {
+    float: right;
+    position: relative;
+}
+
+#contactcontainer {
+    width: 60%;
+    height: 30%;
+    text-align: center;
+    margin: 2em auto 0em auto;
+}
+
+#fishbg {
+    height: 60%;
+    width: 100%;
+    background-image: url("../media/feeders.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
 
 .fishcontainer {
     width: 64%;
@@ -282,4 +359,41 @@ footer {
         margin: 15px auto;
     
     }
+
+    #ceremonycontainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+        size: 85%;
+        margin-bottom: 2em;
+    }
+    
+    .pcontainer {
+        width: 80%;
+    }
+    
+    .fishpond {
+        width: 30%;
+        margin: .125em;
+    }
+
+    .about {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .containerabout {
+        width: 100%;
+        margin: .125em;
+        padding: 1em;
+    }
+    
+    .logocenter {
+        width: 100%;
+        padding: 0em 8.5em;
+    }
+    
 }
