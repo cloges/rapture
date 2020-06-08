@@ -1,0 +1,75 @@
+
+ * {
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+ }
+ 
+ body, html {
+    height: 100%;
+    font-family: 'News Cycle', Arial, sans-serif;
+}
+
+nav {
+    width: 100%;
+    background-color: black;
+    height: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #EDE6CD;
+    color: #EDE6CD;
+}
+
+ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+  
+  li {
+    padding: 5em 10px;
+    margin: 0px 2px;
+    font-size: 1.125em;
+}
+
+li:hover{
+    color: black;
+    background-color: #F58233;
+}
+ 
+.splash {
+    height: 100%;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../media/splash.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+}
+
+.splash-button {
+    background-color: #EDE6CD;
+    color: black;
+    width: 100%;
+    margin-top: 2em;
+    border: 1px solid #EDE6CD;
+    padding: 0.9375rem 1.875rem;
+    font-size: 1.125rem;
+    cursor: pointer;
+    font-family: 'News Cycle', Arial, sans-serif;
+}
+
+ .splash-button:hover {
+     background-color: #F58233;
+}
+
+#toplogo {
+    height: 50%;
+    padding: 0 10px;
+}
